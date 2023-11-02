@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Beat Making Services</title>
+</head>
+<body>
+    <header>
+        <h1>Noodleman Producer</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About DJ Beatmaster</h2>
+        <p>Welcome to DJ Beatmaster's world of hip hop beats. With years of experience in the music industry, we produce high-quality beats for artists, rappers, and singers.</p>
+    </section>
+
+    <section id="services">
+        <h2>Services</h2>
+        <div class="service">
+            <h3>Custom Beat Production</h3>
+            <p>Get tailor-made beats that match your style and vision.</p>
+        </div>
+        <div class="service">
+            <h3>Mastering</h3>
+            <p>Free mastering included with any beat made and mixed by our team</p>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-item">
+            <audio controls>
+              <source src="/Users/alexsmith/Desktop/NM website/off baby final remaster.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+            </audio>
+            <p>Off Baby - Yung Ra</p>
+        </div>
+        <div class="portfolio-item">
+            <audio controls>
+              <source src="/Users/alexsmith/Desktop/NM website/on da grind final mix_mastered.wav" type="audio/wav">
+            Your browser does not support the audio element.
+            </audio>
+            <p>On Da Grind - Yung Ra</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Ready to elevate your music with our beats? Reach out to us:</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 DJ Beatmaster</p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.getElementById("contact-form");
+
+            form.addEventListener("submit", function (event) {
+                event.preventDefault(); // Prevent the default form submission
+
+                // You can add code here to send the form data to a server or handle it as needed.
+                // For this example, we'll display a confirmation message.
+
+                const formData = new FormData(form);
+
+                // Replace the following code with actual form submission logic
+                alert("Form submitted with the following data:\n\n" +
+                    "Name: " + formData.get("name") + "\n" +
+                    "Email: " + formData.get("email") + "\n" +
+                    "Message: " + formData.get("message")
+                );
+
+                // Clear the form fields
+                form.reset();
+            });
+        });
+    </script>
+</body>
+</html>
