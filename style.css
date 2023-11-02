@@ -7,12 +7,12 @@ body, h1, h2, h3, p, ul {
 /* Basic styling for the page */
 body {
     font-family: Arial, sans-serif;
-    background-color: #ffff00;
+    background-color: #000000;
     color: #ffffff;
 }
 
 header {
-    background-color: #D33333;
+    background-color: #D3dd33;
     padding: 20px;
     text-align: center;
 }
